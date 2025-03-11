@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- css -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <main class="flex justify-center">
+        <div class="mockup-phone bg-white text-black">
+            <div class="mockup-phone-camera"></div>
+            <div class="mockup-phone-display text-white grid place-content-center">
+                
+                <!-- avaiable balance -->
+                <div class="stats shadow">
+                    <div class="stat">
+                      <div class="stat-value text-black">89,400</div>
+                      <div class="stat-desc text-base font-normal text-black">available balance</div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <!-- add money -->
+                 <div>
+                     <button class="btn btn-xl">Add money</button>
+                     <button class="btn btn-xl">Chash out</button>
+                 </div>
+                 <!-- add money form -->
+                 <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-10">
+                    <div class="card-body text-black">
+                      <fieldset class="fieldset">
+                        <label class="fieldset-label">Amount</label>
+                        <input type="text" class="input" placeholder="Amount" autocomplete="off" />
+                        <label class="fieldset-label">Pin</label>
+                        <input type="password" class="input" placeholder="Pin" autocomplete="off" />
+                        <button class="btn btn-neutral mt-4">Add Money</button>
+                      </fieldset>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- js -->
+    <script src="js/home.js"></script>
+</body>
+</html>
