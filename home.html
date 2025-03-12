@@ -17,7 +17,7 @@
                 <!-- avaiable balance -->
                 <div class="stats shadow">
                     <div class="stat">
-                      <div class="stat-value text-black">89,400</div>
+                      <div class="stat-value text-black">8940</div>
                       <div class="stat-desc text-base font-normal text-black">available balance</div>
                     </div>
                 </div>
@@ -29,15 +29,15 @@
                  </div>
                  <!-- add money form -->
                  <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-10">
-                    <div class="card-body text-black">
+                    <form class="card-body text-black">
                       <fieldset class="fieldset">
                         <label class="fieldset-label">Amount</label>
-                        <input type="text" class="input" placeholder="Amount" autocomplete="off" />
+                        <input id="input-add-money" type="text" class="input" placeholder="Amount" autocomplete="off" required />
                         <label class="fieldset-label">Pin</label>
-                        <input type="password" class="input" placeholder="Pin" autocomplete="off" />
-                        <button class="btn btn-neutral mt-4">Add Money</button>
+                        <input id="input-pin-number" type="password" class="input" placeholder="Pin" autocomplete="off" />
+                        <button id="btn-add-money" class="btn btn-neutral mt-4">Add Money</button>
                       </fieldset>
-                    </div>
+                    </form>
                   </div>
             </div>
         </div>
