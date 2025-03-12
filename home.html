@@ -16,8 +16,8 @@
                 
                 <!-- avaiable balance -->
                 <div class="stats shadow">
-                    <div class="stat">
-                      <div class="stat-value text-black">8940</div>
+                    <div class="stat text-center">
+                      <div id="current-balance" class="stat-value text-black">8940</div>
                       <div class="stat-desc text-base font-normal text-black">available balance</div>
                     </div>
                 </div>
@@ -25,10 +25,10 @@
                 <!-- add money -->
                  <div>
                      <button class="btn btn-xl">Add money</button>
-                     <button class="btn btn-xl">Chash out</button>
+                     <button class="btn btn-xl">cash out</button>
                  </div>
-                 <!-- add money form -->
-                 <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-10">
+                 <!-- add money form start -->
+                 <div class="hidden card bg-base-100 w-full max-w-sm shadow-2xl mt-10">
                     <form class="card-body text-black">
                       <fieldset class="fieldset">
                         <label class="fieldset-label">Amount</label>
@@ -38,7 +38,21 @@
                         <button id="btn-add-money" class="btn btn-neutral mt-4">Add Money</button>
                       </fieldset>
                     </form>
-                  </div>
+                 </div>
+                 <!-- add money form end -->
+                 <!-- cash out from start -->
+                 <div class="card bg-base-100 w-full max-w-sm shadow-2xl mt-10">
+                  <form class="card-body text-black">
+                    <fieldset class="fieldset">
+                      <label class="fieldset-label">Amount</label>
+                      <input id="input-cashout" type="text" class="input" placeholder="Amount" autocomplete="off" required />
+                      <label class="fieldset-label">Pin</label>
+                      <input id="pin-number" type="password" class="input" placeholder="Pin" autocomplete="off" />
+                      <button id="btn-cashout" class="btn btn-neutral mt-4">Cash out</button>
+                    </fieldset>
+                  </form>
+               </div>
+                 <!-- cash out from end -->
             </div>
         </div>
     </main>
